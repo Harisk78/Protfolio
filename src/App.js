@@ -4,6 +4,7 @@ import About from './components/About'
 import Project from './components/Project'
 import Certificate from './components/Certificate'
 import Navbar from './components/Navbar'
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
