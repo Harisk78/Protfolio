@@ -9,10 +9,10 @@ const Navbar = () => {
         justifyContent: "center",
         alignItems: "center",
         padding: "10px 20px",
-        boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.55)",
         position: "sticky",
         top: 0,
-        backgroundColor: "#000000ff",
+        backgroundColor: "#606060ff",
         zIndex: 1000,
       }}
     >

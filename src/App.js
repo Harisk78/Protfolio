@@ -6,18 +6,20 @@ import Certificate from './components/Certificate'
 import Navbar from './components/Navbar'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CourseList from './components/CourseList'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/project' element={<Project />} />
-        <Route path='/certificate' element={<Certificate />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Navbar />
+    //   <Routes>
+    //     <Route path='/' element={<Home />} />
+    //     <Route path='/about' element={<About />} />
+    //     <Route path='/project' element={<Project />} />
+    //     <Route path='/certificate' element={<Certificate />} />
+    //   </Routes>
+    // </BrowserRouter>
+    <CourseList />
   )
 }
 
