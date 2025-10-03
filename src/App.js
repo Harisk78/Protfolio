@@ -8,16 +8,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
-  const obj = {
-    name: "sk",
-    age: 21,
-    car: "mini"
-  }
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home userData={obj} />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/project' element={<Project />} />
         <Route path='/certificate' element={<Certificate />} />
@@ -26,4 +21,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

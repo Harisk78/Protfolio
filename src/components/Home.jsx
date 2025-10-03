@@ -1,13 +1,11 @@
 import React from "react";
+import bgimg from "../Assests/bgimg.jpg";
 
-const Home = (props) => {
-  let { name, age, car } = props.userData;
+const Home = () => {
   return (
     <div>
-      Home
-      <h1>{name}</h1>
-      <h1>{age}</h1>
-      <h1>{car}</h1>
+      <div>Harisk</div>
+      <div></div>
     </div>
   );
 };
