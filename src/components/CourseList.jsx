@@ -1,24 +1,49 @@
 import React from "react";
-import img from "./Assests/bgimg.jpg";
+import img from "../Assests/bgimg.jpg";
+import Home from "./Home";
 
 const CourseList = () => {
   let courses = [
     {
+      img: img,
       name: "Html",
-      imgsrc: { img },
       Price: 199,
       Rate: 4.5,
     },
+    {
+      img: img,
+      name: "css",
+      Price: 279,
+      Rate: 6,
+    },
+    {
+      img: img,
+      name: "Js",
+      Price: 229,
+      Rate: 8,
+    },
+    {
+      img: img,
+      name: "React",
+      Price: 229,
+      Rate: 8,
+    },
+    {
+      img: img,
+      name: "Bootstrap",
+      Price: 229,
+      Rate: 8,
+    },
   ];
-  courses.map((course) => {
-    <CourseList
+  const coursesList = courses.map((course) => (
+    <Home
+      bgimg={course.img}
       name={course.name}
-      bgimg={course.imgsrc}
-      Price={course.Price}
+      price={course.Price}
       Rate={course.Rate}
-    />;
-  });
-  return <CourseList />;
+    />
+  ));
+  return <>{coursesList}</>;
 };
 
 export default CourseList;

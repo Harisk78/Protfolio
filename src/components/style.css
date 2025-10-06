@@ -1,11 +1,28 @@
 .card {
-  background-color: blanchedalmond;
+  background-color: rgb(255, 194, 119);
   max-width: 200px;
   text-align: center;
   margin: 10px;
+  padding-bottom: 10px;
 }
 
 .card img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin-top: 10px;
+}
+button {
+  border-radius: 20px;
+  background-color: rgba(157, 0, 255, 0.442);
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(157, 0, 255);
+  cursor: pointer;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
 }
