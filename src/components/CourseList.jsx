@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../Assests/bgimg.jpg";
 import Home from "./Home";
 
@@ -40,10 +40,19 @@ const CourseList = () => {
       Rate: 8,
     },
   ]);
+
+  let [dummy, setDummy] = useState(false);
+
+  useEffect(() => {
+    console.log("Component Mounted");
+    console.log(dummy);
+  }, []);
+
   function DeleteCourse(id) {
     const newCourseList = courses.filter((course) => course.id != id);
     setCourses(newCourseList);
   }
+
   const coursesList = courses.map((course) => (
     <Home
       key={course.id}
@@ -54,7 +63,11 @@ const CourseList = () => {
       id={course.id}
     />
   ));
-  return <>{coursesList}</>;
+  return (
+    <>
+      {coursesList} <button onClick={() => setDummy(true)}>Click me</button>
+    </>
+  );
 };
 
 export default CourseList;

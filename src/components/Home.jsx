@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import img from "../Assests/bgimg.jpg";
 import "./style.css";
 
 const Home = (props) => {
   const [purchase, setPurchase] = useState(false);
+
   function Buynow() {
     setPurchase(true);
   }
+
   return (
     props.name && (
       <div
