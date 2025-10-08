@@ -41,15 +41,12 @@ const CourseList = () => {
     },
   ]);
 
-  let [dummy, setDummy] = useState(false);
-
   useEffect(() => {
     console.log("Component Mounted");
-    console.log(dummy);
   }, []);
 
   function DeleteCourse(id) {
-    const newCourseList = courses.filter((course) => course.id != id);
+    const newCourseList = courses.filter((course) => course.id !== id);
     setCourses(newCourseList);
   }
 
@@ -63,11 +60,7 @@ const CourseList = () => {
       id={course.id}
     />
   ));
-  return (
-    <>
-      {coursesList} <button onClick={() => setDummy(true)}>Click me</button>
-    </>
-  );
+  return <>{coursesList}</>;
 };
 
 export default CourseList;
