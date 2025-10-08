@@ -42,7 +42,9 @@ const CourseList = () => {
   ]);
 
   useEffect(() => {
-    console.log("Component Mounted");
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }, []);
 
   function DeleteCourse(id) {
